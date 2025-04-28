@@ -487,10 +487,12 @@
     </footer>
   </body>
   <script>
-    var products = document.getElementsByClassName("product");
-    products[0].addEventListener("click", () => {
-      window.location.href = "sproduct.html";
-    });
+    for (i = 0; i < 16; i++) {
+      var products = document.getElementsByClassName("product");
+      products[i].addEventListener("click", () => {
+        window.location.href = "sproduct.html";
+      });
+    }
   </script>
   <script src="script.js"></script>
 </html>
