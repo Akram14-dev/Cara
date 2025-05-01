@@ -226,11 +226,11 @@
       </div>
       <div class="about">
         <h4>About</h4>
-        <a href="#">About Us</a>
+        <a href="about.html">About Us</a>
         <a href="#">Delivery Information</a>
         <a href="#">Privacy Policy</a>
         <a href="#">Terms And Conditions</a>
-        <a href="#">Contact Us</a>
+        <a href="contact.html">Contact Us</a>
       </div>
       <div class="my-account">
         <h4>My Account</h4>
@@ -283,5 +283,13 @@
       });
     </script>
   </body>
+  <script>
+    for (i = 0; i < 16; i++) {
+      var products = document.getElementsByClassName("product");
+      products[i].addEventListener("click", () => {
+        window.location.href = "sproduct.html";
+      });
+    }
+  </script>
   <script src="script.js"></script>
 </html>
